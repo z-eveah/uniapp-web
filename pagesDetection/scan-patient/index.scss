@@ -1,0 +1,63 @@
+.detection-scan-wrap {
+  height: 100vh;
+  background: #f5f6f8;
+  padding: 20rpx 24rpx;
+
+  .address {
+    display: flex;
+    align-items: center;
+    height: 144rpx;;
+    padding: 0 30rpx;
+    background: #fff;
+    border-radius: 22rpx;
+    margin-bottom: 21rpx;
+
+    .name{
+      margin-left: 24rpx;
+      font-weight: 500;
+      color: #212121;
+      font-size: 36rpx;
+    }
+  }
+  .scan-content {
+    font-size: 32rpx;
+    background: #fff;
+    text-align: center;
+    height: calc(100vh - 240rpx);
+    border-radius: 22rpx;
+    .qrcode {
+      width: 356rpx; 
+      height: 356rpx;
+      margin-top: 181rpx;
+    }
+    .tip {
+      margin-top: 54rpx;
+      color: #212121;
+      font-size: 32rpx;
+      text-align: center;
+      font-weight: 500;
+      line-height: 45rpx;
+    }
+    .mt5{
+      margin-top: 8rpx;
+    }
+    .btn{
+      width: 420rpx;
+      height: 70rpx;
+      border-radius: 40rpx;
+      border: 1px solid #00BDA5;
+      color: #00BDA5;
+      font-size: 30rpx;
+      text-align: center;
+      line-height: 70rpx;
+      margin: 0 auto;
+      margin-top: 130rpx;
+    }
+  }
+  .grey{
+    text-align: center;
+    color: #787878;
+    font-size: 28rpx;
+    margin-top: 60rpx;
+  }
+}

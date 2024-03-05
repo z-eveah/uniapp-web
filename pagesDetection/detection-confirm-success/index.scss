@@ -1,0 +1,207 @@
+.confirm-success-wrapper{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 50rpx;
+  .bottom-fixed-account{
+    position: absolute;
+			bottom: 32rpx;
+			left: 32rpx;
+			right: 32rpx;
+  }
+  .fixed-account {
+    position: fixed;
+    bottom: 100rpx;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.confirm-success-container {
+  display: flex;
+  background: linear-gradient(180deg, #00BDA5 0%, #20C5B0 52%, #FFFFFF 100%);
+  box-shadow: 0px 15px 10px 0px rgba(229,248,245,0.4);
+  flex-flow: column;
+  .success-info {
+    margin-top: 40rpx;
+    margin-left: 24rpx;
+    text-align: center;
+    box-sizing: border-box;
+    .success-img {
+      width: 114rpx;
+      height: 131rpx;
+    }
+
+    .success-text {
+      font-size: 40rpx;
+      font-weight: 500;
+      color: #FFFFFF;
+    }
+  }
+  
+  .patient-info-container {
+    margin: 20rpx 24rpx 0;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 20rpx;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+    top: 10rpx;
+    .checklist-item{
+      margin-bottom: 47rpx;
+    }
+    .patient-info-content{
+      width: 642rpx;
+      border-radius: 22rpx;
+      display: flex;
+      flex-flow: column;
+      align-content: space-between;
+      padding: 35rpx 0rpx;
+      box-sizing: border-box;
+      .patient-info-modal {
+        margin-bottom: 54rpx;
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        line-height: 30rpx;
+        .bar-code-value, .name-value, .detection-value{
+          font-size: 30rpx;
+          font-weight: 500;
+          color: #212121;
+          &.bar-code-value {
+            margin-left: 12rpx;
+          }
+          &.name-value {
+            margin-left: 12rpx;
+            .name {
+              margin-right: 21rpx;
+            }
+            .sex{
+              margin-right: 21rpx;
+            }
+          }
+          &.detection-value {
+            flex: 1;
+            margin-left: 12rpx;
+          }
+          .detection-value-item{
+            line-height: 30rpx;
+            text-align: right;
+          }
+
+        }
+        .detection-text, .name-text, .bar-code-text{
+          
+          width: 140rpx;
+          
+        }
+      }
+      .parient-detection{
+        margin-bottom: 8rpx;
+        display: flex;
+      }
+      .bar-code{
+        margin-top: 0rpx;
+      }
+    }
+  }
+  .patient-info-container-list{
+    height: 1050rpx;
+    overflow-y: auto;
+  }
+ 
+}
+  .button-container{
+		margin-top: 100rpx;
+    margin-bottom: 100rpx;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		.button-success{
+			width: 702rpx;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 80rpx;
+			font-family: PingFangSC-Semibold, PingFang SC;
+			font-weight: 600;
+			font-size: 32rpx;
+			border-radius: 40rpx;
+		}
+
+    .btn-wrap{
+      width: 702rpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+		.continue-entering{
+			background: #00BDA5;
+			color: #FFFFFF; 
+			margin-bottom: 26rpx;
+		}
+		.patient-confirm {
+      width: 330rpx;
+			border: 1px solid #00BDA5;
+			background: #FFFFFF;
+			color: #00BDA5;
+		}
+  }
+  .button-container-list{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9rpx 24rpx;
+    bottom: 53rpx;
+    height: 98rpx;
+    background: #FFFFFF;
+    box-shadow: inset 0px 1rpx 0px 0px #E9E9E9;
+    .button-item{
+      width: 340rpx;
+      height: 80rpx;
+      border-radius: 40rpx;
+      border: 1rpx solid #00BDA5;
+      line-height: 80rpx;
+      text-align: center;
+    }
+  }
+  .continue-entering{
+    background: #00BDA5;
+    color: #FFFFFF; 
+  }
+  .patient-confirm {
+    border: 1px solid #00BDA5;
+    background: #FFFFFF;
+    color: #00BDA5;
+  }
+  .code{
+		background: #F7FFFE;
+		border-radius: 12rpx;
+    	border: 1rpx solid #ADE9E1;
+		margin-top: 20rpx;
+		padding: 10rpx 23rpx;
+		.code-info{
+			margin-top: 10rpx;
+			color: #00BDA5;
+		}
+	}
+  .flex{
+		display: flex;
+	}
+	.check-name{
+		color: #999999;
+	}
+  .to-check-list{
+    padding: 20rpx 0;
+    text-align: center;
+    height: 40rpx;
+    font-size: 28rpx;
+    font-weight: 400;
+    color: #00BDA5;
+    line-height: 40rpx;
+  }

@@ -1,0 +1,62 @@
+.time-popup {	
+  height: 100%;
+  .popup-title {
+    height: 116rpx;
+    text-align: center;
+    line-height: 116rpx;
+    font-size: 36rpx;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: bold;
+    color: #02120f;
+    border-bottom: 1px solid #e7e8e7;
+    position: sticky;
+    top: 0;
+    // background-color: #fff;
+    z-index: 9;
+  }
+  .popup-time {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    max-height: 610rpx;
+
+    .time-lev1 {
+      background-color: #f5f6f8;
+      width: 35%;
+      height: 100%;
+      .time-label {
+        height: 76rpx;
+        padding-left: 34rpx;
+        padding-top: 16rpx;
+        box-sizing: border-box;
+        font-size: 32rpx;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #02120f;
+      }
+      .time-label-checked {
+        background-color: #fff;
+      }
+    }
+    .time-lev2 {
+      background-color: #fff;
+      padding-top: 20rpx;
+      overflow: auto;
+      width: 65%;
+      padding-bottom: 40rpx;
+      .time-val {
+        padding-left: 42rpx;
+        box-sizing: border-box;
+        height: 82rpx;
+        line-height: 82rpx;
+        font-size: 32rpx;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #666666;
+      }
+      .time-val-checked {
+        color: #00bda5;
+      }
+    }
+  }
+}

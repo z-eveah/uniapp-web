@@ -1,0 +1,302 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+		"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+	},
+	"pages": [
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "云鹊医助手",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index",
+			"style": {
+				"navigationBarTitleText": "云鹊医助手"
+			}
+		},
+		{
+			"path": "pages/unregister-app/index",
+			"style": {
+				"navigationBarTitleText": "云鹊医助手"
+			}
+		},
+		{
+			"path": "pages/wxLogin/index",
+			"style": {
+				"navigationBarTitleText": "云鹊助手"
+			}
+		},
+		{
+			"path": "pages/phoneLogin/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/health/center",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/join-chat/index",
+			"style": {
+				"navigationBarTitleText": "云鹊医助手",
+				"navigationStyle": "custom",
+				"mp-weixin": {
+					"usingComponents": {
+						"cell": "plugin://materialPlugin/cell"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/protocol/index",
+			"style": {
+				"navigationBarTitleText": "协议"
+			}
+		},
+		{
+			"path": "pages/agreement/index",
+			"style": {
+				"navigationBarTitleText": "云鹊隐私声明"
+			}
+		},
+		{
+			"path": "pages/sample-inspection/index",
+			"style": {
+				"navigationBarTitleText": "样本送检"
+			}
+		},
+		{
+			"path": "pages/express-detail/index",
+			"style": {
+				"navigationBarTitleText": "送检详情"
+			}
+		},
+		{
+			"path": "pages/express-cancel/index",
+			"style": {
+				"navigationBarTitleText": "取消送检"
+			}
+		},
+		{
+			"path": "pages/send-address-list/index",
+			"style": {
+				"navigationBarTitleText": "选择送检地址"
+			}
+		},
+		{
+			"path": "pages/change-address/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/business-card-new/index",
+			"style": {
+				"navigationBarTitleText": "云鹊医"
+			}
+		},
+		{
+			"path": "pages/inviteConsumer/index",
+			"style": {
+				"navigationBarTitleText": "邀请居民检测"
+			}
+		},
+		{
+			"path": "pages/healthServiceList/index",
+			"style": {
+				"navigationBarTitleText": "居民健康服务列表页"
+			}
+		},
+		{
+			"path": "pages/serviceDetail/index",
+			"style": {
+				"navigationBarTitleText": "检测服务详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/sample-detail/index",
+			"style": {
+				"navigationBarTitleText": "查看样本"
+			}
+		},
+		{
+			"path": "pages/expressList/index",
+			"style": {
+				"navigationBarTitleText": "送检查询"
+			}
+		},
+		{
+			"path": "pages/testingMgmt/index",
+			"style": {
+				"navigationBarTitleText": "检测管理"
+			}
+		},
+		{
+			"path": "pages/downloadApp/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/guide/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/afterUsePay",
+			"style": {
+				"navigationBarTitleText": "云鹊医助手"
+			}
+		},
+		{
+			"path": "pages/qualification/index",
+			"style": {
+				"navigationBarTitleText": "云鹊首营资质查询"
+			}
+		},
+		{
+			"path": "pages/detection-detail/index",
+			"style": {
+				"navigationBarTitleText": "检测详情"
+			}
+		},
+		{
+			"path": "pages/sub-setup/index",
+			"style": {
+				"navigationBarTitleText": "订阅设置"
+			}
+		},
+		{
+			"path": "pages/webview/index",
+			"style": {
+				"navigationBarTitleText": "云鹊医"
+			}
+		},
+		{
+			"path": "pages/appointment/list",
+			"style": {
+				"navigationBarTitleText": "预约管理"
+			}
+		},
+		{
+			"path": "pages/appointment/search",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/submit-test-result/index",
+			"style": {
+				"navigationBarTitleText": "提交检测结果"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pagesDetection",
+			"pages": [
+				{
+					"path": "binding-code/index",
+					"style": {
+						"navigationBarTitleText": "检测登记"
+					}
+				},
+				{
+					"path": "detection-confirm-success/index",
+					"style": {
+						"navigationBarTitleText": "检测服务"
+					}
+				},
+				{
+					"path": "scan-patient/index",
+					"style": {
+						"navigationBarTitleText": "检测登记"
+					}
+				},
+				{
+					"path": "agent-entry/index",
+					"style": {
+						"navigationBarTitleText": "受检人信息"
+					}
+				},
+				{
+					"path": "detection-regist/index",
+					"style": {
+						"navigationBarTitleText": "检测登记"
+					}
+				},
+				{
+					"path": "detection-regist-success/index",
+					"style": {
+						"navigationBarTitleText": "检测服务"
+					}
+				},
+				{
+					"path": "balance-withdrawal/index",
+					"style": {
+						"navigationBarTitleText": "余额提现"
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#666666",
+		"selectedColor": "#00BDA5",
+		"borderStyle": "white",
+		"height": "100rpx",
+		"spacing": "12rpx",
+		"fontSize": "20rpx",
+		"backgroundColor": "#F8F9FA",
+		"iconWidth": "80rpx",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"iconPath": "static/images/home.png",
+				"selectedIconPath": "static/images/home-active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/health/center",
+				"iconPath": "static/images/center.png",
+				"selectedIconPath": "static/images/center-active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"plugins": {
+	},
+	"condition": {
+		"current": 1,
+		"list": [
+			{
+				"name": "去支付",
+				"path": "pages/index",
+				"query": ""
+			},
+			{
+				"name": "扫码",
+				"path": "pages/business-card-new/index",
+				"query": "id=2323232&mb=23242423434"
+			},
+			{
+				"name": "检测管理",
+				"path": "pagesDetection/binding-code/index"
+			}
+		]
+	}
+}

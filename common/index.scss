@@ -1,0 +1,161 @@
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+.space-between {
+	justify-content: space-between;
+}
+.center {
+	justify-content: center;
+}
+.align-center {
+	align-items: center;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.bg-grey {
+	background: #f5f6f8;
+}
+.bg-dark {
+	background: #d9d9d9;
+}
+.bg-green {
+	background: #00bda5;
+}
+.bg-liner-blue {
+	background: linear-gradient(81deg, #1abf86 0%, #1edab3 100%);
+}
+.border-grey-1 {
+	border: 1rpx solid transparent;
+}
+.bg-blue {
+	border: 1rpx solid #00bda5;
+	background: linear-gradient(180deg, #eefcfc 0%, #dbf9f9 100%);
+}
+.item {
+	width: 100%;
+	height: 136rpx;
+	line-height: 1;
+	border-radius: 20rpx;
+}
+.line-height-1 {
+	line-height: 1;
+}
+.in-one-line {
+	white-space: nowrap;
+}
+.image {
+	width: 148rpx;
+	height: 136rpx;
+	flex: none;
+}
+.mt56 {
+	margin-top: 56rpx;
+}
+.mt20 {
+	margin-top: 20rpx;
+}
+.mt10 {
+	margin-top: 10rpx;
+}
+.mt30 {
+	margin-top: 30rpx;
+}
+.mr10 {
+	margin-right: 10rpx;
+}
+.ml30 {
+	margin-left: 30rpx;
+}
+.pt20{
+	padding-top: 20rpx;
+}
+.pb30 {
+	padding-bottom: 30rpx;
+}
+.pb20{
+	padding-bottom: 20rpx;
+}
+.pb10 {
+	padding-bottom: 10rpx;
+}
+.pt34 {
+	padding-top: 34rpx;
+}
+.fs20 {
+	font-size: 20rpx;
+}
+.fs24 {
+	font-size: 24rpx;
+}
+.fs26 {
+	font-size: 26rpx;
+}
+.fs28 {
+	font-size: 28rpx;
+}
+.fs32 {
+	font-size: 32rpx;
+}
+.fs36 {
+	font-size: 36rpx;
+}
+.font-red {
+	color: #ff4b33;
+}
+.font-red-2{
+	color: #fb602d;
+}
+.font-grey {
+	color: #666666;
+}
+.font-grey-9 {
+	color: #999999;
+}
+.font-blue {
+	color: #00bda5;
+}
+.font-white {
+	color: #ffffff;
+}
+.font-bold {
+	font-weight: bold;
+}
+.fw500{
+	font-weight: 500;
+}
+.black {
+	color: #212121;
+}
+.line-through {
+	text-decoration: line-through;
+}
+.height-100 {
+	height: 100%;
+}
+.border-divide {
+	height: 1rpx;
+	background-color: #e7e8e7;
+}
+.flex-auto {
+	flex: auto;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.text-center{
+	text-align: center;
+}
+.lh30 {
+	line-height: 30rpx;
+}
+.border-top{
+	border-top: 1px solid #E9E9E9;
+}

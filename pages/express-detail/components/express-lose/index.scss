@@ -1,0 +1,30 @@
+.express-lose {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .lose-icon {
+    display: block;
+    width: 57px;
+    height: 65px;
+    margin-top: 73px;
+  }
+  .lose-tip {
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 700;
+    color: #02120F;
+    margin-top: 24px;
+    margin-bottom: 10px;
+  }
+  .lose-msg {
+    width: 316px;
+    height: 42px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 21px;
+    text-align: center;
+  }
+}

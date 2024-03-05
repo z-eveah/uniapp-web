@@ -1,0 +1,296 @@
+.binding-code-container {
+  width: 100%;
+  background-color: #f5f6f8;
+  min-height: 100vh;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0 24rpx;
+  .code-container {
+    position: relative;
+    z-index: 10;
+    margin-top: 20rpx;
+    .code-content {
+      background: #ffffff;
+      border-radius: 22rpx;
+      min-height: 179rpx;
+      padding: 32rpx;
+      box-sizing: border-box;
+      .left {
+        padding-top: 20rpx;
+      }
+      &.bar-code-content {
+        .input-error-message {
+          font-size: 26rpx;
+          margin-top: 30rpx;
+          font-weight: 400;
+          color: #ff720c;
+        }
+        .hasTime {
+          color: #787878;
+          font-size: 24rpx;
+          margin-top: 10rpx;
+          font-weight: 300;
+        }
+      }
+      .input-title {
+        font-size: 32rpx;
+        font-weight: 500;
+        color: #212121;
+        margin-right: 26rpx;
+        min-width: 150rpx;
+        flex-shrink: 0;
+      }
+      .input-content-group {
+        margin-top: 20rpx;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        justify-content: space-around;
+      }
+      .input-content {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        font-size: 28rpx;
+        margin-top: 20rpx;
+        input {
+          font-size: 28rpx;
+          font-weight: 400;
+          color: #666666;
+          width: 100%;
+        }
+      }
+      .input-content-scan {
+        position: relative;
+        height: 41rpx;
+        /deep/ .u-input {
+          background-color: #ffffff !important;
+          padding-left: 0rpx !important;
+        }
+      }
+      .code {
+        font-weight: 600;
+        color: #212121;
+        font-size: 36rpx;
+        width: 80% !important;
+      }
+      .code-input-item-r {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .clear-img-container {
+          width: 120rpx;
+          height: 100rpx;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          .clear-img {
+            width: 33rpx;
+            height: 33rpx;
+            margin-right: 20rpx;
+          }
+        }
+        .scan-qr-img-container {
+          display: flex;
+          align-items: center;
+        }
+        .scan-qr-img-container-code {
+          font-size: 14px;
+          color: #787878;
+          .scan-qr-img {
+            height: 100rpx;
+            width: 100rpx;
+          }
+          .mt6 {
+            margin-top: 6rpx;
+            white-space: nowrap;
+            font-size: 24rpx;
+          }
+        }
+      }
+    }
+  }
+  .sumbit-button {
+    width: 300rpx;
+    height: 80rpx;
+    background: #d9d9d9;
+    border-radius: 39rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 53rpx;
+  }
+  .sumbit-button-top {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 32rpx;
+    font-weight: 700;
+    z-index: 100;
+    background: #ffffff;
+    padding: 12rpx 20rpx;
+    padding-bottom: constant(safe-area-inset-bottom); /*兼容 IOS<11.2*/
+    padding-bottom: env(safe-area-inset-bottom); /*兼容 IOS>11.2*/
+  }
+  .sumbit-button-active {
+    background: #00bda5;
+  }
+  .pb150 {
+    padding-bottom: 150rpx;
+  }
+  .binding-code-confirm {
+    ::v-deep .u-model {
+      .u-model__footer {
+        .u-model__footer__button {
+          font-size: 36rpx;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .binding-code-showinfo {
+    .descrption {
+      font-size: 32rpx;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #666666;
+      margin-bottom: 20rpx;
+    }
+    .title {
+      height: 54rpx;
+      font-size: 36rpx;
+      line-height: 54rpx;
+      text-align: center;
+      font-weight: 500;
+      color: #000000;
+      margin-bottom: 24rpx;
+    }
+    .code,
+    .user {
+      .name {
+        font-weight: 400;
+        color: #999999;
+        margin-right: 18rpx;
+      }
+    }
+    .code {
+      background: #f7fffe;
+      border-radius: 12rpx;
+      border: 1rpx solid #ade9e1;
+      margin-top: 20rpx;
+      padding: 20rpx 23rpx;
+      min-width: 240px;
+      .code-info {
+        margin-top: 10rpx;
+        color: #00bda5;
+      }
+    }
+    .user {
+      text-align: center;
+      margin-bottom: 10rpx;
+      .name {
+        width: 120rpx;
+        // height: 70rpx;
+        line-height: 32rpx;
+      }
+      .user-info {
+        line-height: 32rpx;
+        font-weight: 700;
+      }
+      .check-name {
+        max-width: 360rpx;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .space {
+        margin-left: 20rpx;
+      }
+    }
+    .tips {
+      position: relative;
+      margin-bottom: 8rpx;
+      padding-left: 37rpx;
+      font-size: 26rpx;
+      font-weight: 400;
+      color: #ff720c;
+      line-height: 37rpx;
+    }
+    .flex {
+      display: flex;
+    }
+    .check-name {
+      color: #000000;
+    }
+    .list-wrap {
+      max-height: 434rpx;
+      overflow-y: scroll;
+    }
+  }
+  .radio-wrap {
+    display: flex;
+    line-height: 32px;
+    align-items: flex-start;
+    margin-top: 12rpx;
+    .radio-info {
+      flex: auto;
+    }
+    .info-title {
+      font-size: 28rpx;
+      line-height: 36rpx;
+      font-weight: 500;
+      color: #333;
+    }
+    .info-tip {
+      font-size: 25rpx;
+      font-weight: 400;
+      color: #999;
+      line-height: 32rpx;
+      margin-top: 8rpx;
+    }
+  }
+  .flex-wrap {
+    display: flex;
+    background: #ffffff;
+    border-radius: 22rpx;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 38rpx;
+    box-sizing: border-box;
+    .left {
+      width: 64rpx;
+      height: 64rpx;
+      border-radius: 64rpx;
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .right {
+      color: #212121;
+      font-size: 36rpx;
+      font-weight: 700;
+      margin-left: 25rpx;
+      .phone {
+        display: inline-block;
+        margin-left: 24rpx;
+        font-size: 32rpx;
+      }
+      .idcard {
+        margin-top: 14rpx;
+        font-size: 28rpx;
+        font-weight: 400;
+        color: #999999;
+      }
+    }
+  }
+  .left-arrow{
+    width: 20rpx;
+    height: 20rpx;
+  }
+}

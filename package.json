@@ -1,0 +1,49 @@
+{
+  "name": "wx_product_assistant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.0.3",
+    "axios": "^0.27.2",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.2.0",
+    "uview-ui": "^2.0.31"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "autoprefixer": "^9.8.8",
+    "babel-eslint": "^10.1.0",
+    "css-byebye": "^3.1.1",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^7.1.0",
+    "node-sass": "^6.0.1",
+    "postcss": "^7.0.39",
+    "postcss-class-rename": "^1.0.1",
+    "prettier": "^2.1.2",
+    "sass-loader": "^12.1.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "vue-eslint-parser": "^7.1.1"
+  },
+  "scripts": {
+    "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch --minimize",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint --fix ./pages",
+    "push": "bash gitPush.sh"
+  },
+  "uni-app": {
+    "scripts": {
+      "uat": {
+        "title": "运行uat环境",
+        "env": {
+          "UNI_PLATFORM": "mp-weixin",
+          "VUE_APP_ENV": "uat"
+        }
+      }
+    }
+  },
+  "author": "PICA",
+  "license": "ISC"
+}

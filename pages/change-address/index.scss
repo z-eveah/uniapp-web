@@ -1,0 +1,173 @@
+.address-wrap-main {
+  background: #fff;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 16px;
+  ::v-deep .page-content {
+    padding: 0;
+  }
+  /deep/ .u-form-item{
+    position: relative;
+  }
+  /deep/ .u-form-item__body__right__message{
+    margin-left: 190rpx!important;
+    color: #ff4b33;
+    font-size: 26rpx;
+    position: absolute;
+    bottom: 20rpx;
+    
+  }
+  /deep/ .u-input__content__field-wrapper__field{
+    font-weight: 800!important;
+  }
+  /deep/ .u-line{
+    border-color: #f0f1f2!important;
+  }
+  /deep/ .u-form-item__body__left{
+    width: 190rpx!important;
+  }
+  /deep/ .u-form-item__body{
+    position: relative;
+    padding: 40rpx 0!important;
+  }
+  /deep/ .plo{
+    color: #999!important;
+    font-weight: 400!important;
+  }
+  /* Firefox 4-18 */
+  input:-moz-placeholder {
+    color: #999 !important;
+    font-weight: 400 !important;
+  }
+  /* Firefox 19-50 */
+  input::-moz-placeholder {
+    color: #999 !important;
+    font-weight: 400 !important;
+  }
+  /* - Internet Explorer 10–11
+- Internet Explorer Mobile 10-11 */
+  input:-ms-input-placeholder {
+    color: #ffffff !important;
+    font-weight: 400 !important;
+  }
+  /* Edge (also supports ::-webkit-input-placeholder) */
+  input::-ms-input-placeholder {
+    color: #999 !important;
+    font-weight: 400 !important;
+  }
+  /* CSS Working Draft */
+  ::placeholder {
+    color: #999 !important;
+    font-weight: 400 !important;
+  }
+  .btn-wrap-add {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: inset 0 1rpx 0 0 #e9e9e9;
+    padding: 10rpx 24rpx;
+    padding-bottom: calc(
+      18rpx + constant(safe-area-inset-bottom)
+    ); /*兼容 IOS>11.2*/
+    padding-bottom: calc(18rpx + env(safe-area-inset-bottom)); /*兼容 IOS<11.2*/
+    .btn {
+      height: 80rpx;
+      background: #00bda5;
+      border-radius: 40rpx;
+      line-height: 80rpx;
+      font-size: 32rpx;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 700;
+      color: #ffffff;
+      text-align: center;
+      &.no-click {
+        background: #d9d9d9;
+        color: #ffffff;
+      }
+    }
+  }
+  .btn-wrap-edit {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: inset 0 2rpx 0 0 #e9e9e9;
+    padding: 10rpx 24rpx 10rpx 0;
+    padding-bottom: calc(18rpx + constant(safe-area-inset-bottom));
+    /*兼容 IOS>11.2*/
+    padding-bottom: calc(18rpx + env(safe-area-inset-bottom));
+    /*兼容 IOS<11.2*/
+    .btn-main {
+      display: flex;
+      padding-right: 110rpx;
+      width: 100%;
+      .btn-delete-wrap {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        .delete-icon {
+          width: 38rpx;
+          height: 40rpx;
+        }
+        p {
+          margin-top: 10rpx;
+          font-size: 22rpx;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #212121;
+          line-height: 22rpx;
+        }
+      }
+      .btn {
+        width: 580rpx;
+        height: 80rpx;
+        background: #00bda5;
+        border-radius: 40rpx;
+        line-height: 80rpx;
+        font-size: 32rpx;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: center;
+        &.no-click {
+          background: #d9d9d9;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  ::v-deep {
+    .address-wrap {
+      height: 1180rpx;
+      #province {
+        height: 1000rpx;
+      }
+      #city {
+        height: 1000rpx;
+      }
+      #county {
+        height: 1000rpx;
+      }
+      #town {
+        height: 1000rpx;
+      }
+      .tip-header h3 {
+        font-weight: 700;
+        color: #212121;
+      }
+      .tip-header .submit-btn {
+        color: #00bda5 !important;
+      }
+      .address-select .show-address-header .item.active:after {
+        background-color: #00bda5;
+      }
+      .address-select .address-content ul li.active {
+        color: #00bda5;
+      }
+    }
+  }
+}
